@@ -4,6 +4,24 @@
 # You may not use the Array#sort method in your solution
 
 # Write Your method code here
+def bubble_sort(array)
+    if array.size <= 1
+        return array
+    end
+    sort = false
+    while !sort
+        sort=true
+        array.each_with_index do |current_element,index|
+            if index < array.length - 1
+                if array[index] > array[index+1]
+                    array[index], array[index+1] = array[index+1], array[index]
+                    sort = false
+                end
+            end
+       end    
+end
+return array
+end
 
 # Driver Code: Do not edit under this line
 
