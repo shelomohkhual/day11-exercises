@@ -8,23 +8,23 @@
 
 
 def linear_search(target, array)
-	# 	i = 0
-	# 	while i < array.length
-	# 	  if array[i] == target
-	# 		return i
-	# 	  end
-	# 	  i += 1
-	# 	end
-	# 	 "Not found"
-	#   end
-
-	for target in array do
-		if array == target
-			return array.index(array)
+		i = 0
+		while i < array.length
+		  if array[i] == target
+			return i
+		  end
+		  i += 1
 		end
-	end
-	return "not found"
-end
+		 "Not found"
+	  end
+
+# 	for x in array do
+# 		if array == target
+# 			return array.index(x)
+# 		end
+# 	end
+# 	return "not found"
+# end
 
 
 	# until target ==  |random_numbers|

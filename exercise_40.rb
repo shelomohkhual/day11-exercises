@@ -5,7 +5,9 @@
 # The first or last element of the array is considered a "peak" if it is greater than it's one neighbour
 
 # Write Your method code here
-
+def find_peaks(array)
+    array.minmax
+end
 # Driver Code: Do not edit under this line
 
 # check_solution runs a single test case and prints whether it was
