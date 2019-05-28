@@ -4,6 +4,26 @@
 # For example "aaabbc" is compressed to "3a2bc".
 
 # Write Your method code here
+def compress_string(string)
+    i = 0
+    result =""
+    count = 1
+    while i<string.length
+        if i < string.length - 1
+            if string[i] == string[i + 1]
+                count += 1
+            else
+                result += "#{count if count>1}#{string[i]}"
+                count = 1
+            end
+        elsif i == string.length - 1
+                result += "#{count if count>1}#{string[i]}"
+        end
+        i += 1
+    end
+    return result
+end
+
 
 # Driver Code: Do not edit under this line
 
